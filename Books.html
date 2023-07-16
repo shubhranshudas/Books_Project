@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Book Galaxy</title>
+    <style>
+      @media screen and (min-width:400px) and (max-width:768px) {
+        .main{
+          font size: 15px;
+        }
+        .book {
+            flex-wrap:wrap;
+        }
+        .book .book-image{
+            flex-wrap: wrap;
+            font-size: small;
+        }
+      }
+
+        body{
+            background-color: rgb(160, 123, 123)
+        }
+        .genre-heading{
+            content: "";
+            display:table;
+            clear: both;
+        }
+        .book{
+            float:left;
+            width:20%;
+            padding:0;
+            justify-content: space-between;
+        }
+        .main{
+            font: 1em sans-serif;
+            font-size: x-large;
+            -ms-flex-align: center ;
+             text-align: center;
+        }
+        .details {
+          display: none;
+          margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 style="color: black">WELCOME TO BOOK GALAXY</h>
+    </div>
+    <div class="genre-heading">
+        <h3>SCI-FI</h3></div>
+    <div class="book">
+        <img src="JTTCOE.jpg" alt="image" class="book-image" onclick="showDetails('book1')" width="150px" height="150px">
+        <div id="details-book1" class="details">
+          <h5>JOURNEY TO THE CENTER OF EARTH</h5>
+          <p>Author:Jules Verne</p>
+          <p>Genre:Sci-Fi</p>
+        </div>
+      </div>
+      <div class="book">
+        <img src="WOTW.jpg" alt="image" class="book-image" onclick="showDetails('book2')" width="150px" height="150px">
+        <div id="details-book2" class="details">
+          <h5>THE WAR OF THE WORLDS</h5>
+          <p>Author:H.G.Wells</p>
+          <p>Genre:Sci-Fi</p>
+        </div>
+      </div>  
+      <div class="book">
+        <img src="dune.jpg" alt="image" class="book-image" onclick="showDetails('book3')" width="150px" height="150px">
+        <div id="details-book3" class="details">
+          <h5>DUNE</h5>
+          <p>Author:Frank Herbert</p>
+          <p>Genre:Sci-Fi</p>
+        </div>
+      </div>  
+      <div class="book">
+        <img src="TTM.jpg" alt="image" class="book-image" onclick="showDetails('book4')" width="150px" height="150px">
+        <div id="details-book4" class="details">
+          <h5>THE TIME MACHINE</h5>
+          <p>Author:H.G.Wells</p>
+          <p>Genre:Sci-Fi</p>
+        </div>
+      </div> 
+      <div class="book">
+        <img src="SC.jpg" alt="image" class="book-image" onclick="showDetails('book5')" width="150px" height="150px">
+        <div id="details-book5" class="details">
+          <h5>SNOW CRASH</h5>
+          <p>Author:Neal Stephenson</p>
+          <p>Genre:Sci-Fi</p>
+        </div>
+      </div> 
+      <div class="genre-heading">
+        <h3>THRILLER</h3></div> 
+        <div class="book">
+            <img src="GG.jpg" alt="image" class="book-image" onclick="showDetails('book6')" width="150px" height="150px">
+            <div id="details-book6" class="details">
+              <h5>GONE GIRL</h5>
+              <p>Author:Gillian Flyn</p>
+              <p>Genre:Thriller</p>
+            </div>
+          </div> 
+          <div class="book">
+            <img src="BIGTS.jpg" alt="image" class="book-image" onclick="showDetails('book7')" width="150px" height="150px">
+            <div id="details-book7" class="details">
+              <h5>BEFORE I GO TO SLEEP</h5>
+              <p>Author:S.J.Watson</p>
+              <p>Genre:Thriller</p>
+            </div>
+          </div> 
+          <div class="book">
+            <img src="ITW.jpg" alt="image" class="book-image" onclick="showDetails('book8')" width="150px" height="150px">
+            <div id="details-book8" class="details">
+              <h5>IN THE WOODS</h5>
+              <p>Author:Tana French</p>
+              <p>Genre:Thriller</p>
+            </div>
+          </div> 
+          <div class="book">
+            <img src="BLL.jpg" alt="image" class="book-image" onclick="showDetails('book9')" width="150px" height="150px">
+            <div id="details-book9" class="details">
+              <h5>BIG LITTLE LIES</h5>
+              <p>Author:Liane Moriarty</p>
+              <p>Genre:Thriller</p>
+            </div>
+          </div> 
+          <div class="book">
+            <img src="TGB.jpg" alt="image" class="book-image" onclick="showDetails('book10')" width="150px" height="150px">
+            <div id="details-book10" class="details">
+              <h5>THE GIRL BEFORE</h5>
+              <p>Author:JP Delaney</p>
+              <p>Genre:Thriller</p>
+            </div>
+          </div> 
+          <div class="genre-heading">
+            <h3>FANTASY</h3></div>
+            <div class="book">
+                <img src="HP.jpg" alt="image" class="book-image" onclick="showDetails('book11')" width="150px" height="150px">
+                <div id="details-book11" class="details">
+                  <h5>HARRY POTTER</h5>
+                  <p>Author:J.K.Rowling</p>
+                  <p>Genre:Fantasy</p>
+                </div>
+              </div> 
+              <div class="book">
+                <img src="TLOTR.jpg" alt="image" class="book-image" onclick="showDetails('book12')" width="150px" height="150px">
+                <div id="details-book12" class="details">
+                  <h5>THE LORD OF THE RINGS</h5>
+                  <p>Author:John Ronald Reuel Tolkien</p>
+                  <p>Genre:Fantasy</p>
+                </div>
+              </div> 
+              <div class="book">
+                <img src="TFS.jpg" alt="image" class="book-image" onclick="showDetails('book13')" width="150px" height="150px">
+                <div id="details-book13" class="details">
+                  <h5>THE FIFTH SEASON</h5>
+                  <p>Author:N.K.Jemisin</p>
+                  <p>Genre:Fantasy</p>
+                </div>
+              </div> 
+              <div class="book">
+                <img src="TPB.jpg" alt="image" class="book-image" onclick="showDetails('book14')" width="150px" height="150px">
+                <div id="details-book14" class="details">
+                  <h5>THE PRINCESS BRIDE</h5>
+                  <p>Author:William Goldman</p>
+                  <p>Genre:Fantasy</p>
+                </div>
+              </div> 
+              <div class="book">
+                <img src="" alt="image" class="book-image" onclick="showDetails('book14')" width="150px" height="150px">
+                <div id="details-book14" class="details">
+                  <h5>THE PRINCESS BRIDE</h5>
+                  <p>Author:William Goldman</p>
+                  <p>Genre:Fantasy</p>
+                </div>
+              </div> 
+              <div class="book">
+                <img src="HMC.jpg" alt="image" class="book-image" onclick="showDetails('book15')" width="150px" height="150px">
+                <div id="details-book15" class="details">
+                  <h5>HOWL'S MOVING CASTLE</h5>
+                  <p>Author:Dianna Wynne Jones</p>
+                  <p>Genre:Fantasy</p>
+                </div>
+              </div> 
+              <div class="genre-heading">
+                <h3>ROMANCE</h3></div> 
+                <div class="book">
+                    <img src="ITE.jpg" alt="image" class="book-image" onclick="showDetails('book16')" width="150px" height="150px">
+                    <div id="details-book16" class="details">
+                      <h5>IT ENDS WITH US</h5>
+                      <p>Author:Collen hoover</p>
+                      <p>Genre:Romance</p>
+                    </div>
+                  </div>   
+                  <div class="book">
+                    <img src="YRTBW.jpg" alt="image" class="book-image" onclick="showDetails('book17')" width="150px" height="150px">
+                    <div id="details-book17" class="details">
+                      <h5>YOU ARE THE BEST WIFE</h5>
+                      <p>Author:Ajay K. Pandey</p>
+                      <p>Genre:Romance</p>
+                    </div>
+                  </div>
+                  <div class="book">
+                    <img src="WDMR.jpg" alt="image" class="book-image" onclick="showDetails('book18')" width="150px" height="150px">
+                    <div id="details-book18" class="details">
+                      <h5>WHEN DIMPLE MET RISHI</h5>
+                      <p>Author:Sandhya Menon</p>
+                      <p>Genre:Romance</p>
+                    </div>
+                  </div>
+                  <div class="book">
+                    <img src="BL.jpg" alt="image" class="book-image" onclick="showDetails('book19')" width="150px" height="150px">
+                    <div id="details-book19" class="details">
+                      <h5>BOOK LOVERS</h5>
+                      <p>Author:Emily Henry</p>
+                      <p>Genre:Romance</p>
+                    </div>
+                  </div>
+                  <div class="book">
+                    <img src="LOTB_.jpg" alt="image" class="book-image" onclick="showDetails('book20')" width="150px" height="150px">
+                    <div id="details-book20" class="details">
+                      <h5>LOVE ON THE BRAIN</h5>
+                      <p>Author:Ali Hazelwood</p>
+                      <p>Genre:Romance</p>
+                    </div>
+                  </div>
+                  <div class="genre-heading">
+                    <h3>HORROR</h3></div>
+                    <div class="book">
+                        <img src="IT.jpg" alt="image" class="book-image" onclick="showDetails('book21')" width="150px" height="150px">
+                        <div id="details-book21" class="details">
+                          <h5>IT</h5>
+                          <p>Author:Stephen King</p>
+                          <p>Genre:Horror</p>
+                        </div>
+                      </div>
+                      <div class="book">
+                        <img src="HOTHH.jpg" alt="image" class="book-image" onclick="showDetails('book22')" width="150px" height="150px">
+                        <div id="details-book22" class="details">
+                          <h5>HAUNTING OF THE HILL HOUSE</h5>
+                          <p>Author:Shirley Jackson</p>
+                          <p>Genre:Horror</p>
+                        </div>
+                      </div>
+                      <div class="book">
+                        <img src="PS.jpg" alt="image" class="book-image" onclick="showDetails('book23')" width="150px" height="150px">
+                        <div id="details-book23" class="details">
+                          <h5>GHOST STORY</h5>
+                          <p>Author:Peter Straub</p>
+                          <p>Genre:Horror</p>
+                        </div>
+                      </div>
+                      <div class="book">
+                        <img src="TE.jpg" alt="image" class="book-image" onclick="showDetails('book24')" width="150px" height="150px">
+                        <div id="details-book24" class="details">
+                          <h5>THE EXORCIST</h5>
+                          <p>Author:William Peter Blatty</p>
+                          <p>Genre:Horror</p>
+                        </div>
+                      </div>
+                      <div class="book">
+                        <img src="TSH.jpg" alt="image" class="book-image" onclick="showDetails('book25')" width="150px" height="150px">
+                        <div id="details-book25" class="details">
+                          <h5>THE SHINING</h5>
+                          <p>Author:Stephen King</p>
+                          <p>Genre:Horror</p>
+                        </div>
+                      </div>         
+    </div>
+</body>
+<script>
+    function showDetails(bookId) {
+      var detailsElement = document.getElementById('details-' + bookId);
+      detailsElement.style.display = 'block';
+    } 
+</script>
+</html>
