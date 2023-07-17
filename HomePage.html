@@ -6,23 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Galaxy</title>
     <style>
-        @media screen and (min-width:400px) and (max-width:768px) {
-        .heading {
-          font size: 25px;
-        }
-        .quote{
-          font-size: 16px;
-          flex-wrap: wrap;
-        }
-        .div1 .body .loginbox .form-group{
-          font-size: 25px;
-          flex-wrap: wrap;
-        }
-        .div1 h1{
-              font-size: 16px;
-              flex-wrap: wrap;
-        }
-      }
     .div1{
         margin: 0;
         padding: 0;
@@ -116,8 +99,8 @@
     <nav>
         <ul>
             
-            <li><a href="ContactUs.html">CONTACTS</a></li>
-            <li><a href="AboutUs.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACTS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
         </ul>
     </nav>
     <table>
@@ -167,7 +150,7 @@
         if(data[i].email==email && data[i].password==password)
         {
             alert("Logged in");
-            window.location.href="Books.html"
+            window.location.href="main.html"
             break;
         }
         else{
@@ -176,6 +159,6 @@
       }
     }
     function goToSignup(){
-        window.location.href="SigningPage.html";
+        window.location.href="signin.html";
     }
-</script>
+  </script>
